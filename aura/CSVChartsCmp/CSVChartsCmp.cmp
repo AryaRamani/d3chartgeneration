@@ -1,6 +1,6 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 	
-    <ltng:require scripts="/resource/lodash/lodash/lodash.js" />
+    <ltng:require scripts="{!$Resource.lodash}" />
 
 <ltng:require scripts="{!$Resource.d3}" afterScriptsLoaded="{!c.onInit}"/>
     
