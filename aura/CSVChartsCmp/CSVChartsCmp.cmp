@@ -1,0 +1,32 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <ltng:require scripts="/resource/lodash/lodash/lodash.js" />
+
+<ltng:require scripts="{!$Resource.d3}" afterScriptsLoaded="{!c.onInit}"/>
+    
+    
+    <aura:attribute name="showSpinner" type="Boolean" default="false" /> 
+    <aura:attribute name="data" type="Object[]"  /> 
+
+    
+    <aura:if isTrue="{!v.showSpinner}">
+            <lightning:spinner variant="brand" size="large" />
+    </aura:if>
+
+
+<div class="scroll slds-card" style="width:100%">
+   <div style="padding-right:5%">
+   <!-- csv file  input -->
+       <lightning:input type="file" label="" name="Mapping" multiple="false" accept=".csv" onchange="{!c.readCSV}"/>
+    </div>
+    
+    <!-- div For the Bar Graph -->
+    <div style="width:960px" class="slds-scrollable slds-card" id="chart"></div>
+    
+    <!--div for the Donut Chart-->
+    <div style="width:960px" class="slds-scrollable slds-card" id="piechart"></div>
+    
+
+</div>
+    
+</aura:component>

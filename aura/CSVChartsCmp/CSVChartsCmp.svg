@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="300" class="shadow">
+		<g transform="translate(150,150)">
+			<path d="M8.572527594031473e-15,-140A140,140 0 1,1 -43.26237921249269,133.14791228132148L0,0Z" 
+				fill="#e75244" 
+				style="fill-opacity: 0.15; stroke: #e75244; stroke-width: 2px;"></path>
+			<path d="M-43.26237921249269,133.14791228132148A140,140 0 0,1 9.862739597592311e-14,-140L0,0Z" 
+				fill="#33bb9d" 
+				style="fill-opacity: 0.15; stroke: #33bb9d; stroke-width: 2px;"></path>
+		</g>
+	</svg>
