@@ -16,6 +16,7 @@
 
 <div class="scroll slds-card" style="width:100%">
    <div style="padding-right:5%">
+   <!-- csv file  input -->
        <lightning:input type="file" label="" name="Mapping" multiple="false" accept=".csv" onchange="{!c.readCSV}"/>
     </div>
     
